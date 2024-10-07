@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
         findViewById<View>(R.id.deleteButton).setOnClickListener {
+            // I added this if statement
             if (spinner.size != 0) {
 
                 (names as MutableList).removeAt(spinner.selectedItemPosition)
